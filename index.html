@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bookkeeping Business Readiness Quiz &middot; Fine Points Bookkeeping</title>
+<meta name="description" content="Five questions. Two minutes. Find out exactly where you are in building your bookkeeping business and get a personalized next step from Morgan Law, CPB.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Where Are You in Your Bookkeeping Business? Take the Quiz.">
+<meta property="og:description" content="The Bookkeeping Business Readiness Quiz. Five questions. Personalized recommendation. Built by Fine Points Bookkeeping with Morgan Law, CPB.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  /* SWAP-SLOT: Morgan's confirmed palette. Replace all --prospect-* variables below with verified hex values.
+     Working estimates: --prospect-bg: #FAFAF9 (off-white), --prospect-text: #1A1A1A (near-black),
+     --prospect-accent: #5B8A7A (muted sage -- alt: #C4A0A0 dusty blush if site skews warm),
+     --prospect-accent-soft: rgba(91,138,122,0.10), --prospect-accent-border: rgba(91,138,122,0.28).
+     Confirm all hex from rendered finepoints.biz screenshot at kickoff before publish. -->
+  :root{
+    --prospect-bg:#FAFAF9;
+    --prospect-bg-card:#F4F2EF;
+    --prospect-bg-deep:#F0EDE8;
+    --prospect-text:#1A1A1A;
+    --prospect-text-secondary:#4A4844;
+    --prospect-text-muted:#8A8480;
+    --prospect-accent:#5B8A7A;
+    --prospect-accent-bright:#6E9E8D;
+    --prospect-accent-soft:rgba(91,138,122,0.10);
+    --prospect-accent-border:rgba(91,138,122,0.28);
+    --prospect-border:rgba(91,138,122,0.15);
+    --prospect-border-strong:rgba(91,138,122,0.34);
+    --gold:#C9973A;
+    --gold-soft:rgba(201,151,58,0.08)
+  }
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',-apple-system,sans-serif;background:var(--prospect-bg);color:var(--prospect-text);line-height:1.65;overflow-x:hidden}
+  body::before{content:'';position:fixed;inset:0;background:radial-gradient(circle at 80% 5%,rgba(91,138,122,0.06),transparent 44%),radial-gradient(circle at 10% 90%,rgba(201,151,58,0.04),transparent 48%);pointer-events:none;z-index:0}
+  .container{max-width:1100px;margin:0 auto;padding:0 28px;position:relative;z-index:1}
+  .container-narrow{max-width:780px;margin:0 auto;padding:0 28px;position:relative;z-index:1}
+  h1,h2,h3,h4{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;letter-spacing:-0.01em;line-height:1.15}
+  nav{position:fixed;top:0;left:0;right:0;padding:14px 0;background:rgba(250,250,249,0.92);backdrop-filter:blur(18px);border-bottom:1px solid var(--prospect-border);z-index:100}
+  .nav-inner{display:flex;justify-content:space-between;align-items:center;max-width:1100px;margin:0 auto;padding:0 28px}
+  .nav-brand{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;letter-spacing:0.04em;color:var(--prospect-text);text-decoration:none}
+  .nav-cta{padding:9px 22px;background:var(--prospect-accent);color:#fff;border-radius:2px;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;transition:all 0.3s ease}
+  .nav-cta:hover{background:var(--prospect-accent-bright);transform:translateY(-1px)}
+  /* Hero */
+  .hero{padding:128px 0 64px;text-align:center;position:relative}
+  .eyebrow{display:inline-block;padding:7px 18px;background:var(--prospect-accent-soft);border:1px solid var(--prospect-accent-border);border-radius:100px;font-size:10px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--prospect-accent);margin-bottom:28px}
+  .hero h1{font-size:clamp(34px,5.5vw,62px);line-height:1.04;margin-bottom:14px;color:var(--prospect-text)}
+  .hero h1 em{color:var(--prospect-accent);font-style:italic}
+  .hero-subtitle{font-family:'Cormorant Garamond',serif;font-size:clamp(18px,2.3vw,24px);color:var(--prospect-text-secondary);margin-bottom:36px;font-style:italic;max-width:660px;margin-left:auto;margin-right:auto;line-height:1.45}
+  .cta-primary{display:inline-block;padding:17px 42px;background:var(--prospect-accent);color:#fff;border-radius:2px;font-size:13px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;transition:all 0.3s ease;box-shadow:0 10px 26px rgba(91,138,122,0.20)}
+  .cta-primary:hover{background:var(--prospect-accent-bright);transform:translateY(-2px)}
+  .cta-secondary{display:inline-block;padding:17px 42px;background:transparent;color:var(--prospect-accent);border:1px solid var(--prospect-accent-border);border-radius:2px;font-size:13px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;transition:all 0.3s ease}
+  .cta-secondary:hover{background:var(--prospect-accent-soft);transform:translateY(-1px)}
+  section{padding:66px 0}
+  .section-eyebrow{font-size:10px;font-weight:500;letter-spacing:0.24em;text-transform:uppercase;color:var(--prospect-accent);margin-bottom:14px}
+  .section-title{font-size:clamp(26px,3.8vw,44px);margin-bottom:16px;color:var(--prospect-text)}
+  .section-title em{color:var(--prospect-accent);font-style:italic}
+  .section-sub{font-size:16px;color:var(--prospect-text-secondary);max-width:640px;margin-bottom:34px;line-height:1.7}
+  .section-sub strong{color:var(--prospect-text);font-weight:600}
+  /* VSL block */
+  .vsl-wrap{max-width:760px;margin:0 auto 40px;position:relative}
+  .vsl-iframe-outer{position:relative;aspect-ratio:16/9;border-radius:3px;overflow:hidden;background:#000;border:1px solid var(--prospect-accent-border)}
+  .vsl-iframe-outer iframe{width:100%;height:100%;border:0}
+  /* SWAP-SLOT: Landing page MAY use YouTube iframe (only landing, not hub).
+     When Andrei records the walkthrough, embed here. Current src="about:blank" is the placeholder.
+     Replace with YouTube unlisted or Loom embed URL at install kickoff.
+     Example: src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+     Or Loom: src="https://www.loom.com/embed/YOUR_LOOM_ID"
+     Keep the aspect-ratio:16/9 wrapper. -->
+  .vsl-poster-fallback{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,var(--prospect-bg-card),var(--prospect-bg-deep));border:1px solid var(--prospect-accent-border);border-radius:3px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px;text-align:center}
+  .vsl-poster-fallback .vf-eyebrow{font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--prospect-accent);margin-bottom:12px;font-weight:600}
+  .vsl-poster-fallback .vf-headline{font-family:'Cormorant Garamond',serif;font-size:clamp(20px,3vw,32px);color:var(--prospect-text);line-height:1.2;margin-bottom:10px}
+  .vsl-poster-fallback .vf-sub{font-size:12px;color:var(--prospect-text-muted);font-style:italic}
+  /* SWAP-SLOT: Replace vsl-poster-fallback div with the iframe-outer div once video is recorded.
+     The poster below is the Day-1 state until the walkthrough exists. -->
+  .vsl-caption{font-size:12px;color:var(--prospect-text-muted);font-style:italic;text-align:center;margin-top:10px}
+  /* Outcome cards (what you get) */
+  .outcome-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px;max-width:880px;margin-left:auto;margin-right:auto}
+  @media(max-width:620px){.outcome-grid{grid-template-columns:1fr}}
+  .outcome-card{padding:26px 22px;background:var(--prospect-bg-card);border:1px solid var(--prospect-border);border-radius:3px}
+  .outcome-card .oc-label{font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--prospect-accent);margin-bottom:8px;font-weight:600;display:block}
+  .outcome-card h3{font-size:20px;color:var(--prospect-text);margin-bottom:9px}
+  .outcome-card p{font-size:14px;color:var(--prospect-text-secondary);line-height:1.65}
+  /* Quiz section */
+  .quiz-section{background:var(--prospect-bg-card);border-top:1px solid var(--prospect-border);border-bottom:1px solid var(--prospect-border)}
+  .quiz-container{max-width:680px;margin:0 auto;text-align:center}
+  .quiz-questions{list-style:none;margin:30px 0;text-align:left;display:grid;grid-template-columns:1fr;gap:14px}
+  .quiz-q{padding:20px 22px;background:var(--prospect-bg);border:1px solid var(--prospect-border);border-radius:3px;font-size:15px;color:var(--prospect-text);line-height:1.55;display:flex;gap:16px;align-items:flex-start}
+  .quiz-q .q-num{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--prospect-accent);font-weight:600;line-height:1;flex-shrink:0;min-width:22px}
+  .quiz-embed-note{padding:28px 24px;background:var(--prospect-accent-soft);border:1px dashed var(--prospect-accent-border);border-radius:3px;font-size:14px;color:var(--prospect-text-secondary);line-height:1.6;text-align:center;margin-top:24px}
+  /* Founder / About Morgan */
+  .founder-wrap{display:grid;grid-template-columns:200px 1fr;gap:40px;align-items:start;max-width:840px;margin:36px auto 0}
+  @media(max-width:680px){.founder-wrap{grid-template-columns:1fr;gap:24px}}
+  .founder-photo-block{position:relative}
+  .founder-photo-placeholder{width:100%;aspect-ratio:3/4;background:linear-gradient(135deg,var(--prospect-bg-card),var(--prospect-accent-soft));border:1px solid var(--prospect-accent-border);border-radius:3px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:11px;color:var(--prospect-text-muted);text-align:center;padding:20px;font-style:italic;line-height:1.6}
+  .founder-photo-placeholder .fp-monogram{font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:600;color:var(--prospect-accent);opacity:0.5;margin-bottom:8px}
+  /* SWAP-SLOT: Replace .founder-photo-placeholder with Morgan's portrait.
+     IMG-TAG src=morgan-law.jpg alt="Morgan Law, CPB - Fine Points Bookkeeping" style="width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center top;border-radius:3px;border:1px solid var(--prospect-accent-border)"
+     Priority: (1) About page morgan-law.jpg confirmed (2) YouTube thumbnail crop (3) TikTok grid (4) File from Morgan.
+     Never AI-generated. Never stock. -->
+  .founder-content h3{font-size:clamp(24px,3.5vw,36px);color:var(--prospect-text);margin-bottom:5px}
+  .founder-content .founder-title-line{font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--prospect-accent);margin-bottom:18px;display:block}
+  .founder-content p{font-size:15px;color:var(--prospect-text-secondary);line-height:1.7;margin-bottom:13px}
+  .credential-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+  .credential-tag{padding:8px 14px;background:var(--prospect-accent-soft);border:1px solid var(--prospect-accent-border);border-radius:2px;font-size:12px;color:var(--prospect-accent);letter-spacing:0.06em}
+  /* Proof / Testimonials */
+  .testimonials-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:840px;margin:28px auto 0}
+  @media(max-width:600px){.testimonials-grid{grid-template-columns:1fr}}
+  .testi-card{padding:26px 22px;background:var(--prospect-bg-card);border:1px solid var(--prospect-border);border-radius:3px}
+  .testi-card blockquote{font-family:'Cormorant Garamond',serif;font-size:19px;color:var(--prospect-text);font-style:italic;line-height:1.45;margin-bottom:12px}
+  .testi-card .testi-attr{font-size:12px;color:var(--prospect-accent);letter-spacing:0.1em;text-transform:uppercase}
+  .testi-card .testi-context{font-size:11px;color:var(--prospect-text-muted);margin-top:3px}
+  .testi-placeholder{padding:18px 22px;background:var(--prospect-accent-soft);border:1px dashed var(--prospect-accent-border);border-radius:3px;font-size:13px;color:var(--prospect-text-muted);font-style:italic;line-height:1.6;max-width:840px;margin:14px auto 0;text-align:center}
+  /* AG1 proof block */
+  .ag1-proof-bar{max-width:840px;margin:36px auto 0;padding:24px 28px;background:var(--prospect-bg-card);border:1px solid var(--prospect-border);border-radius:3px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+  @media(max-width:580px){.ag1-proof-bar{flex-direction:column;text-align:center}}
+  .ag1-logo-block{flex-shrink:0}
+  .ag1-logo-text{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;color:var(--gold);letter-spacing:0.04em}
+  .ag1-logo-sub{font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--prospect-text-muted)}
+  .ag1-proof-text{flex-grow:1;font-size:14px;color:var(--prospect-text-secondary);line-height:1.65}
+  .ag1-proof-text strong{color:var(--prospect-text)}
+  /* Apply section */
+  .apply-section{text-align:center;background:linear-gradient(180deg,transparent,var(--prospect-bg-card) 50%,transparent)}
+  /* FAQ */
+  .faq-list{max-width:740px;margin:30px auto 0;list-style:none}
+  .faq-item{padding:20px 0;border-bottom:1px solid var(--prospect-border)}
+  .faq-item:last-child{border-bottom:0}
+  .faq-q{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--prospect-text);margin-bottom:9px}
+  .faq-a{font-size:14px;color:var(--prospect-text-secondary);line-height:1.7}
+  /* Footer */
+  footer{padding:44px 0;border-top:1px solid var(--prospect-border);text-align:center}
+  footer .footer-brand{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--prospect-text);margin-bottom:10px}
+  footer .footer-links{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-bottom:20px}
+  footer .footer-links a{font-size:12px;color:var(--prospect-text-muted);text-decoration:none;letter-spacing:0.08em}
+  footer .footer-links a:hover{color:var(--prospect-accent)}
+  footer .disclaimer{font-size:12px;color:var(--prospect-text-muted);max-width:580px;margin:0 auto;line-height:1.7;font-style:italic}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="nav-inner">
+<a href="https://finepoints.biz" class="nav-brand">Fine Points Bookkeeping</a>
+<a href="#quiz" class="nav-cta">Take the Quiz</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<div class="container">
+<div class="eyebrow">With Morgan Law, CPB &middot; Fine Points Bookkeeping</div>
+<h1>Find out exactly where you are<br>in building <em>your bookkeeping business.</em></h1>
+<p class="hero-subtitle">Five questions. Two minutes. A personalized next step that tells you whether to start with the business structure or the client-getting side.</p>
+
+<!-- VSL BLOCK: Landing page MAY use video embed. -->
+<div class="vsl-wrap">
+<!-- SWAP-SLOT: Replace this poster with iframe-outer once Andrei records the walkthrough.
+     iframe-outer template:
+     <div class="vsl-iframe-outer">
+       <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Morgan Law - Fine Points Bookkeeping Readiness Quiz" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+     </div>
+     Sources: YouTube unlisted or Loom embed. Confirm with Morgan which video to feature Day-1 (her own YT content works as placeholder until walkthrough is recorded). -->
+<div class="vsl-poster-fallback">
+<div class="vf-eyebrow">Fine Points Bookkeeping</div>
+<div class="vf-headline">The Bookkeeping Business Readiness Quiz</div>
+<div class="vf-sub">Morgan Law, CPB &middot; Video walkthrough recorded at install kickoff</div>
+</div>
+<p class="vsl-caption">Morgan's walkthrough of the quiz and what the results mean for your bookkeeping practice. Swaps in at install kickoff.</p>
+</div>
+
+<a href="#quiz" class="cta-primary">Take the Quiz &rarr;</a>
+</div>
+</section>
+
+<!-- WHAT YOU GET -->
+<section>
+<div class="container">
+<div class="section-eyebrow" style="text-align:center">What You Walk Away With</div>
+<h2 class="section-title" style="text-align:center;margin-left:auto;margin-right:auto;max-width:600px">A specific recommendation. <em>Not a generic next step.</em></h2>
+<p class="section-sub" style="text-align:center;margin-left:auto;margin-right:auto">The quiz is built around one question that matters most: do you need the business side or the client-getting side first? Five questions route you to the right answer.</p>
+
+<div class="outcome-grid">
+<div class="outcome-card">
+<span class="oc-label">Result A</span>
+<h3>Business Coach Path</h3>
+<p>For bookkeepers who are getting client inquiries but not sure how to structure the business, price their services, or set up the back-end. The Bookkeeper Business Coach is the right next step.</p>
+</div>
+<div class="outcome-card">
+<span class="oc-label">Result B</span>
+<h3>Marketing Coach Path</h3>
+<p>For bookkeepers who have the skills and the process but are not landing clients consistently. The Bookkeeper Marketing Coach is the right next step. You already have what it takes to deliver -- you need the client-getting side.</p>
+</div>
+<div class="outcome-card">
+<span class="oc-label">Regardless of Result</span>
+<h3>One Specific Next Step</h3>
+<p>You get a personalized recommendation delivered to your email. Not a list of fifteen things to do. One thing. The one that moves the needle given where you actually are right now in building your bookkeeping practice.</p>
+</div>
+<div class="outcome-card">
+<span class="oc-label">Completely Free</span>
+<h3>The Quiz Takes Two Minutes</h3>
+<p>Five questions about your current client load, your experience level, your pricing confidence, and your revenue goal. Enter your email at the result screen. Your recommendation arrives immediately.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- QUIZ SECTION -->
+<section id="quiz" class="quiz-section">
+<div class="container">
+<div class="quiz-container">
+<div class="section-eyebrow">The Quiz</div>
+<h2 class="section-title">The Bookkeeping Business<br><em>Readiness Quiz</em></h2>
+<p class="section-sub" style="text-align:center;margin-left:auto;margin-right:auto">Five questions. Your email. Your recommendation. That is it.</p>
+
+<!-- SWAP-SLOT: Replace with Typeform or ScoreApp embed at install kickoff.
+     Typeform embed code goes here. Three install options:
+     (1) Typeform: <div data-tf-live="YOUR_FORM_ID"></div> plus Typeform JS embed
+     (2) ScoreApp: use their embed snippet
+     (3) ConvertKit opt-in form if quiz logic is built inside email platform
+     Quiz question bank shown below as working preview until embed is live. -->
+
+<ul class="quiz-questions">
+<li class="quiz-q"><span class="q-num">1</span><span>How long have you been doing bookkeeping work, paid or unpaid? (Just starting out / 1-2 years / 3+ years)</span></li>
+<li class="quiz-q"><span class="q-num">2</span><span>Do you currently have paying bookkeeping clients? (No, not yet / One or two / Three or more)</span></li>
+<li class="quiz-q"><span class="q-num">3</span><span>How confident are you in your pricing? (Not sure what to charge / I have rates but they feel off / Confident in my pricing)</span></li>
+<li class="quiz-q"><span class="q-num">4</span><span>What is your goal for your bookkeeping practice in the next 12 months? (Land my first client / Reach my first consistent $2K month / Replace my full-time income)</span></li>
+<li class="quiz-q"><span class="q-num">5</span><span>What feels like the bigger problem right now? (I am not sure how to set up or run the business side / I know what I am doing but I do not know how to get clients)</span></li>
+</ul>
+
+<div class="quiz-embed-note">Quiz embed goes live at install kickoff. The five questions above are the working bank. Your recommendation and the course that fits your answer arrives in your email after you submit.</div>
+
+<div style="margin-top:28px">
+<a href="https://finepoints.biz" target="_blank" class="cta-primary">Browse the Course Library &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ABOUT MORGAN -->
+<section>
+<div class="container">
+<div class="section-eyebrow" style="text-align:center">About Morgan</div>
+<h2 class="section-title" style="text-align:center;margin-left:auto;margin-right:auto;max-width:580px">Certified bookkeeper. Former Target HQ copyeditor. <em>Now teaching what she built.</em></h2>
+
+<div class="founder-wrap">
+<div class="founder-photo-block">
+<div class="founder-photo-placeholder">
+<div class="fp-monogram">ML</div>
+<!-- SWAP-SLOT: Replace this placeholder with Morgan's portrait at install kickoff.
+     IMG-TAG src=morgan-law.jpg alt="Morgan Law, CPB" style="width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center top;border-radius:3px;border:1px solid var(--prospect-accent-border)"
+     Priority: (1) About page morgan-law.jpg confirmed on finepoints.biz/about (2) YouTube thumbnail crop (3) TikTok profile (4) File from Morgan.
+     Never AI-generated. Never stock. Real photos only. -->
+<span>Morgan Law, CPB<br>portrait goes here<br><br>Source: finepoints.biz/about</span>
+</div>
+</div>
+<div class="founder-content">
+<h3>Morgan Law, CPB</h3>
+<span class="founder-title-line">Certified Professional Bookkeeper &middot; Founder, Fine Points Bookkeeping</span>
+<p>Morgan is a Certified Professional Bookkeeper and Pepperdine University honors graduate who left a copyediting role at Target HQ to build her own independent bookkeeping practice. "I love the details. The fine points, if you will."</p>
+<p>She built Fine Points Bookkeeping from the ground up: clients, processes, the whole back-end. Then she kept going to teach other bookkeepers how to do the same thing. She has been featured on The Successful Bookkeeper podcast (EP471) and has helped beginner and intermediate bookkeepers build practices of their own.</p>
+<p>Her approach: practical, organized, and peer-forward. She is not a business guru who happens to know numbers. She is the bookkeeper who built hers and is now teaching the exact process with the kind of precision that only comes from having done it.</p>
+<div class="credential-row">
+<span class="credential-tag">Certified Professional Bookkeeper</span>
+<span class="credential-tag">Pepperdine University (Honors)</span>
+<span class="credential-tag">The Successful Bookkeeper EP471</span>
+<span class="credential-tag">YouTube @FinePointsBookkeeping</span>
+<span class="credential-tag">2.8K TikTok @bookkeeper_finepoints</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- PROOF / TESTIMONIALS -->
+<section style="background:linear-gradient(180deg,transparent,var(--prospect-bg-card) 50%,transparent)">
+<div class="container">
+<div class="section-eyebrow" style="text-align:center">Student Results</div>
+<h2 class="section-title" style="text-align:center;margin-left:auto;margin-right:auto;max-width:560px">What students say after going through the material.</h2>
+<p class="section-sub" style="text-align:center;margin-left:auto;margin-right:auto">Real students from the Fine Points Bookkeeping course library.</p>
+
+<!-- SWAP-SLOT: Pull named student testimonials from course reviews at install kickoff.
+     The two card slots below are placeholders. Morgan's students from Newzenler and Teachable reviews
+     are the source. No fabricated results. Real quotes from real students only.
+     Format: 3-sentence result statement. Name. Course completed. -->
+<div class="testimonials-grid">
+<div class="testi-card">
+<!-- SWAP-SLOT: Replace blockquote text with verbatim student review from Newzenler or Teachable.
+     Attribution: first name only or as student has shared publicly. Never invented. -->
+<blockquote>"SWAP-SLOT: Verbatim student quote from Newzenler or Teachable reviews goes here. Pull from course completion reviews at kickoff."</blockquote>
+<div class="testi-attr">SWAP-SLOT: First Name</div>
+<div class="testi-context">SWAP-SLOT: Course name</div>
+</div>
+<div class="testi-card">
+<!-- SWAP-SLOT: Second student testimonial. Same sourcing rules. -->
+<blockquote>"SWAP-SLOT: Verbatim second student quote from Newzenler or Teachable reviews goes here. Pull from course completion reviews at kickoff."</blockquote>
+<div class="testi-attr">SWAP-SLOT: First Name</div>
+<div class="testi-context">SWAP-SLOT: Course name</div>
+</div>
+</div>
+<div class="testi-placeholder">Named student testimonials from Newzenler and Teachable course reviews swap in at install kickoff. Real quotes from real students only. No fabricated results.</div>
+</div>
+</section>
+
+<!-- AG1 PROOF NOTE -->
+<section>
+<div class="container">
+<div class="ag1-proof-bar">
+<div class="ag1-logo-block">
+<div class="ag1-logo-text">AG1</div>
+<div class="ag1-logo-sub">Consulting Ltd</div>
+</div>
+<div class="ag1-proof-text">This quiz and funnel page were built by AG1 Consulting Ltd. Our best client went from <strong>$0 to $172K/month after install.</strong> The builds here are smaller and more targeted. The principle is the same: connect what is already working so the audience you already have has a clear next step.
+</div>
+</div>
+</div>
+</section>
+
+<!-- APPLY / CTA -->
+<section id="apply" class="apply-section">
+<div class="container-narrow">
+<div class="section-eyebrow" style="text-align:center">Next Step</div>
+<h2 class="section-title" style="text-align:center;max-width:560px;margin-left:auto;margin-right:auto">Take the quiz. Get <em>your recommendation.</em></h2>
+<p class="section-sub" style="text-align:center;margin-left:auto;margin-right:auto">Five questions. Your email. Your result arrives immediately. No need to browse the whole course library trying to figure out which one fits where you are -- the quiz does that for you.</p>
+
+<div style="text-align:center;margin-bottom:18px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+<a href="#quiz" class="cta-primary">Take the Quiz &rarr;</a>
+<a href="https://finepoints.biz" target="_blank" class="cta-secondary">Browse Course Library</a>
+</div>
+
+<p style="text-align:center;font-size:13px;color:var(--prospect-text-muted);font-style:italic">Free. Two minutes. Personalized to where you are right now in your bookkeeping practice.</p>
+</div>
+</section>
+
+<!-- FAQ -->
+<section style="background:linear-gradient(180deg,transparent,var(--prospect-bg-card) 50%,transparent)">
+<div class="container-narrow">
+<div class="section-eyebrow">FAQ</div>
+<h2 class="section-title">What bookkeepers ask <em>before they take the quiz.</em></h2>
+
+<ul class="faq-list">
+<li class="faq-item">
+<div class="faq-q">Do I need to already have bookkeeping clients to take the quiz?</div>
+<p class="faq-a">No. The quiz works whether you are completely new or already have a few clients but not where you want to be. One of the five questions is specifically about where you are in the client-load stage. Your answer routes your recommendation accordingly.</p>
+</li>
+<li class="faq-item">
+<div class="faq-q">What is the difference between the Business Coach and the Marketing Coach?</div>
+<p class="faq-a">The Bookkeeper Business Coach covers the structure side: pricing, service packages, processes, the back-end of running a bookkeeping practice. The Bookkeeper Marketing Coach covers the client-getting side: how to find clients, how to position yourself, how to market consistently. Most bookkeepers need both eventually. The quiz tells you which one to do first based on where your biggest constraint is right now.</p>
+</li>
+<li class="faq-item">
+<div class="faq-q">How long does the quiz take?</div>
+<p class="faq-a">Two minutes. Five questions. You enter your email at the result screen and the recommendation arrives immediately.</p>
+</li>
+<li class="faq-item">
+<div class="faq-q">I have already bought one of the courses. Is the quiz still useful?</div>
+<p class="faq-a">Yes. If you have the Business Coach but have not started landing clients consistently, the quiz may point you toward the Marketing Coach as the next step. If you have the Marketing Coach and still feel uncertain about the business structure, it may point you the other way. The quiz looks at where you are right now, not what you have already purchased.</p>
+</li>
+<li class="faq-item">
+<div class="faq-q">Is this quiz made by Fine Points Bookkeeping?</div>
+<p class="faq-a">The quiz logic and funnel page were built by AG1 Consulting Ltd as a sample install for Morgan Law's review. The courses it recommends -- Bookkeeper Business Coach and Bookkeeper Marketing Coach -- are Morgan's own courses on Newzenler. The recommendation engine is the plumbing between what Morgan has already built and the student who is trying to figure out where to start.</p>
+</li>
+</ul>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="footer-brand">Fine Points Bookkeeping</div>
+<div class="footer-links">
+<a href="https://finepoints.biz">Home</a>
+<a href="https://finepoints.biz/resources">Course Library</a>
+<a href="https://www.youtube.com/@FinePointsBookkeeping" target="_blank">YouTube</a>
+<a href="https://www.tiktok.com/@bookkeeper_finepoints" target="_blank">TikTok</a>
+</div>
+<p class="disclaimer">Outcomes depend on individual practice capacity, client mix, and execution. Not accounting or tax advice. AG1 Consulting Ltd builds the marketing funnel only; bookkeeping training delivered exclusively by Fine Points Bookkeeping. Course pricing confirmed at finepoints.biz. No explicit pricing is displayed on this page.</p>
+</div>
+</footer>
+
+</body>
+</html>
